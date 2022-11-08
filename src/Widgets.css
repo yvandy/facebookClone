@@ -1,0 +1,15 @@
+.video__option{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 0px 0px 15px 15px;
+    color: gray;
+}
+.video__option div:hover{
+    cursor: pointer;
+}
+.widget__main{
+    border-radius: 15px;    
+    /* border: 2px solid rgba(255,255,255,.5); */
+    /* box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75); */
+}

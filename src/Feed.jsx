@@ -14,11 +14,12 @@ function Feed() {
 
   const getDataFromFirebase = async () => {
     const querySnap = query(collection(db, "posts"), orderBy("timestamp", "desc"));
-    // console.log(querySnap);
+    console.log(querySnap);
     const querySnapShot = await getDocs(querySnap);
-    // console.log(querySnapShot)    
+    console.log(querySnapShot)    
     setPosts(querySnapShot.docs.map(doc => ({ id: doc.id, data: doc.data() })))
   }
+  // console.log(posts);
 
   useEffect(() => {
     getDataFromFirebase()
