@@ -6,7 +6,7 @@ import { useStateValue } from './StateProvider';
 
 
 function Header() {
-    const [{ user }, dispatch] = useStateValue();
+    const [{ user }] = useStateValue();
 
     return (
         <div className='header'>
